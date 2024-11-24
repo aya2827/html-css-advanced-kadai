@@ -10,6 +10,16 @@ body {
   margin: 0 auto 0 auto;
   font-family: "Source Sans Pro","Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
 }
+
+/* PC用カルーセル */
+.carousel {
+  margin: 0 20px 0 20px;
+}
+
+.carouselImg {
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -502,15 +512,21 @@ footer {
   margin: 0;
 }
 @media screen and (max-width: 767px) {
+  /* スマホ用カルーセル設定 */
+  .carousel {
+    margin: 0;
+  }
   #nav-pc {
     display: none;
   }
 #menu-sp {
   display: block;
   background-color: transparent;
-  float: right;
   padding: 0;
   border: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 #nav-sp {
   background-color: #2710d5;
